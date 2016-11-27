@@ -40,7 +40,7 @@
      id="namedview13"
      showgrid="false"
      inkscape:zoom="7.375"
-     inkscape:cx="16"
+     inkscape:cx="-6.1016949"
      inkscape:cy="16"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
@@ -53,15 +53,15 @@
   <g
      id="Page-1"
      transform="translate(-0.5,-0.5)"
-     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1">
+     style="fill:#121212;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1">
     <g
        id="icon-24-key"
-       style="fill:#ffffff">
+       style="fill:#121212;fill-opacity:1">
       <path
          d="M 18.532404,19.467596 14,24 l -3,0 0,3 -3,0 0,3 -5,0 0,-5 10.532404,-10.532404 C 13.188157,13.543721 13,12.543834 13,11.5 13,6.8055794 16.805579,3 21.5,3 26.194421,3 30,6.8055794 30,11.5 30,16.194421 26.194421,20 21.5,20 20.456166,20 19.456279,19.811843 18.532404,19.467596 l 0,0 0,0 z M 27,9 c 0,-1.6568543 -1.343146,-3 -3,-3 -1.656854,0 -3,1.3431457 -3,3 0,1.656854 1.343146,3 3,3 1.656854,0 3,-1.343146 3,-3 l 0,0 z"
          id="key"
          inkscape:connector-curvature="0"
-         style="fill:#ffffff" />
+         style="fill:#121212;fill-opacity:1" />
     </g>
   </g>
 </svg>
