@@ -6,3 +6,20 @@
 	margin-top: 5px;
 	font-size: 18px;
 }
+
+#workers .photo {
+	transition: transform .5s ease, box-shadow .5s ease;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+#workers .photo:hover {
+	transform: rotate(5deg);
+	box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+}
+
+#workers .social-link {
+	color: white;
+	margin-left: .75em;
+	vertical-align: middle;
+}
