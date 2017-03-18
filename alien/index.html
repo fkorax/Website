@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--atpc.one-->
+<html>
+ <head>
+  <title>Alien - ATPC</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="ATPC">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+  <link rel="stylesheet" type="text/css" href="../font.css" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+ </head>
+ 
+ <body>
+  <div id="navbar">
+   <iframe id="backlink" src="http://atpc.one/widget/" frameborder="0" scrolling="no" height="48" width="140"></iframe>
+  </div>
+  <div id="title-div">
+   <h1>Alien</h1>
+   <h3><p>Extraterrestrial. Uncanny.</p><p>Effective.</p><h3>
+  </div>
+  <div id="description" class="text">
+  Alien is a new, powerful compiled language with a minimal overhead created by ATPC for building apps for
+  UNIX, macOS, Windows. It's designed to help you with the typical problems of programming but it doesn't let you
+  alone when it becomes difficult.
+  </div>
+  <div id="example" class="text">
+  <div id="scene">
+   <img src="example_ship.gif" height="75" id="ship" unselectable="on"
+		onselectstart="return false;" 
+		onmousedown="return false;">
+  </div>
+  <code>
+  <p><span class="highlight title">img</span> ship = document getElementById <span class="highlight string">"ship"</span></p>
+  <p><span class="highlight keyword">routine</span> animate()</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;ship setPosition <span class="highlight number">0</span> <span class="highlight number">50</span>*<span class="highlight title">math</span>.sin((<span class="highlight keyword">new</span> <span class="highlight title">Date</span>)*<span class="highlight number">0.001</span>)
+  <p><span class="highlight keyword">end</span></p>
+  </code>
+  </div>
+ </body>
+ <script>
+	// 60 frames per second
+	var fps  = 1000/60;
+	var ship = document.getElementById('ship');
+	
+	function getDelta() {
+		return new Date();
+	}
+	
+	function animate() {
+		ship.style.marginTop = ( 45 * Math.sin(getDelta()*0.001) ) + 90 + "px";
+	}
+	var id = setInterval(animate, fps);
+ </script>
+</html>

@@ -1,0 +1,95 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+#title-div {
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 	10%;
+	padding-bottom:	10%;
+	margin: 0;
+}
+
+#title-div h1 {
+	font-size: 5.25em;
+}
+
+#title-div h3 {
+	font-size: 2em;
+}
+
+#title-div h3 p {
+	margin-top: .3em;
+	margin-bottom: .3em;
+}
+
+#description {
+	background-color: gray;
+	padding-right: 10vw;
+	padding-left: 10vw;
+	display: block;
+}
+
+.text {
+	font-size: 1.5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#example {
+	background: url('example_background.gif');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+#ship {
+	float: left;
+	margin-top: 8%;
+	margin-left: 15%;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#example code {
+	text-align: left;
+	display: inline-block;
+	background-color: #f9fafa;
+	padding: 1.5em 1.5em;
+	color: #000017;
+	font-size: .85em;
+	border: 1px solid #d6d6d6;
+}
+
+.highlight.keyword {
+	color: #AA0C91;
+}
+
+.highlight.string {
+	color: #C41A16;
+}
+
+.highlight.number {
+	color: #1C00CF;
+}
+
+.highlight.special {
+	color: limegreen;
+}
+
+.highlight.comment {
+	color: #007400;
+}
+
+.highlight.title {
+	color: #5C2699;
+}
