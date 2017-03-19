@@ -10,6 +10,8 @@ html, body {
 
 #title-div {
 	padding-top: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 	background-size: cover;
 	background-image: url('background-default.jpeg');
 	background-repeat: no-repeat;
