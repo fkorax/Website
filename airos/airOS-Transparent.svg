@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="100"
+   width="100"
+   id="svg4136"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="airOS-Transparent.svg">
+  <title
+     id="title4157">airOS Icon</title>
+  <metadata
+     id="metadata4144">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>airOS Icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4142" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     id="namedview4140"
+     showgrid="false"
+     inkscape:zoom="6.2932504"
+     inkscape:cx="52.432262"
+     inkscape:cy="47.06707"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4136" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 50 0 A 50 50 0 0 0 0 50 A 50 50 0 0 0 50 100 A 50 50 0 0 0 100 50 A 50 50 0 0 0 50 0 z M 70.708984 16.404297 L 70.710938 16.404297 C 70.818997 16.391707 70.892437 16.396117 70.960938 16.435547 C 72.056938 17.067547 70.120937 25.282843 58.710938 45.839844 C 57.280137 43.407044 54.635888 41.746844 51.617188 41.714844 C 62.973188 22.843043 69.087984 16.593187 70.708984 16.404297 z M 51.521484 45.871094 C 53.815684 45.871094 55.677734 47.736044 55.677734 50.027344 C 55.677734 52.318644 53.815684 54.183594 51.521484 54.183594 C 49.227284 54.183594 47.367188 52.318644 47.367188 50.027344 C 47.367187 47.736044 49.227284 45.871094 51.521484 45.871094 z M 44.302734 45.933594 C 43.614874 47.141494 43.208984 48.541444 43.208984 50.027344 C 43.208984 51.514244 43.614884 52.914194 44.302734 54.121094 C 20.824934 53.707094 12.773438 51.288244 12.773438 50.027344 C 12.773437 48.765444 20.825734 46.348564 44.302734 45.933594 z M 58.708984 54.183594 C 70.111934 74.728294 72.053284 82.924681 70.958984 83.556641 C 69.862984 84.186641 63.751484 78.415594 51.646484 58.308594 C 54.664184 58.272594 57.285184 56.619394 58.708984 54.183594 z "
+     id="path4155" />
+</svg>
