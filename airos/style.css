@@ -6,8 +6,10 @@ body {
 }
 
 #header {
-	padding-left: 2.5%;
 	background-color: black;
+	text-align: center;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
 }
 
 #title {
