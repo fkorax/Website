@@ -31,3 +31,15 @@ body {
 	padding-left: 15%;
 	padding-bottom: 2em;
 }
+
+code {
+	text-align: left;
+	display: inline-block;
+	background-color: #f9fafa;
+	padding: 1.5em 1.5em;
+	margin: 1.5em 1.5em;
+	color: #000017;
+	font-size: .85em;
+	border: 1px solid #d6d6d6;
+	font-family: Menlo, Consolas, Monaco, "Courier New", monospace, serif;
+}
