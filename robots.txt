@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /widget/
+Disallow: /404.html
