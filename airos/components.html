@@ -1,4 +1,4 @@
-<html><head><meta charset="utf-8"><title>airOS Components - ATPC</title><link rel="canonical" href="http://www.atpc.one/airos/components.html"><meta name="author" content="ATPC"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../font.css"><link rel="stylesheet" type="text/css" href="../style.css"><link rel="stylesheet" type="text/css" href="style.css"><link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"></head><body><div id="header"><iframe id="backlink" src="http://atpc.one/widget/" frameborder="0" scrolling="no" height="48" width="140"></iframe></div><div id="title"><h1>airOS Components</h1><div class="separator"></div></div></div><div id="components"><p></p><br><p><h2>airOS</h2></p><p align="center"><br><a href="http://atpc.one/airos/"><img src="http://www.atpc.one/airos/airOS-Transparent-Dark.svg" height="160" alt="airOS" /></a><br></p><br>![platforms](https://img.shields.io/badge/platforms-arm-lightgrey.svg)<br><h1> airOS</h1>airOS is a new, high-level operating system for ARM computers.<br><h2> Cloning, Building, and Running</h2><h3> Requirements</h3>To build airOS, these programs must be **installed** on your system, since airOS' software management is based on packages.<br><code>General requirements:<br>zsh<br>make<br><br>For ARM systems:<br>gcc<br><br>For non-ARM systems (cross-compiling):<br>gcc-arm-linux-gnueabi<br>gcc-arm-linux-gnueabihf<br>binutils-arm-linux-gnueabi<br></code><br>To install the cross-compiling toolchain on Debian-based systems, just run<br><code>$> sudo apt-get install gcc-arm-linux-gnueabi<br>$> sudo apt-get install gcc-arm-linux-gnueabihf<br></code><br>which will install all the necessary tools.<br><h3> Quick Setup</h3><code>$> cd path/to/your/projects/folder/<br><br># Update your repository<br>$> ./update<br><br># Configure for your system<br>$> ./configure<br><br># Build airOS<br>$> make<br></code><br><h3> Testing in a VM</h3>We're using QEMU for virtualization, so make sure QEMU is installed on your<br>host system.<br>To run airOS in QEMU after a successful build, run<br><code>$> make qemu<br></code><br>to launch airOS in QEMU.<br><h3> Testing on Hardware</h3>Our target hardware is the Raspberry Pi, but airOS might work on other platforms,<br>too. Just install the built image on your testing hardware and start debugging.<br><h2> Credits</h2>Copyright (c) 2017 by ATPC<br>[Open Source Licenses](http://www.atpc.one/airos/components.html)<br>Throughout the hole project, "corresponding README" is defined as the nearest<br>README information file containing a legal notice, relative to the file referencing it, whereas "nearest"<br>means "in the same directory" or "in the nearest directory above".<br><h3> License Files</h3><code>GNU  GPL v3:   gpl-3.0.txt<br>GNU AGPL v3:  agpl-3.0.txt<br>GNU LGPL v3:  lgpl-3.0.txt<br></code><br><p></p><div class="separator"></div><br><p><h2>linux</h2></p>        Linux kernel release 4.x &lt;http://kernel.org/&gt;
+<html><head><meta charset="utf-8"><title>airOS Components - ATPC</title><link rel="canonical" href="http://www.atpc.one/airos/components.html"><meta name="author" content="ATPC"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="../font.css"><link rel="stylesheet" type="text/css" href="../style.css"><link rel="stylesheet" type="text/css" href="style.css"><link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"></head><body><div id="header"><iframe id="backlink" src="http://atpc.one/widget/" frameborder="0" scrolling="no" height="48" width="140"></iframe></div><div id="title"><h1>airOS Components</h1><div class="separator"></div></div></div><div id="components"><p></p><br><p><h2>airOS</h2></p><p align="center"><br><a href="http://atpc.one/airos/"><img src="http://www.atpc.one/airos/airOS-Transparent-Dark.svg" height="160" alt="airOS" /></a><br></p><br>![platforms](https://img.shields.io/badge/platforms-arm-lightgrey.svg)<br><h1> airOS</h1>airOS is a new, high-level operating system for ARM computers.<br><h2> Cloning, Building, and Running</h2><h3> Requirements</h3>To build airOS, these programs must be **installed** on your system, since airOS' software management is based on packages.<br><code>General requirements:<br>zsh<br>make<br></code><br><h3> Quick Setup</h3><code>$> cd path/to/your/projects/folder/<br><br># Configure for your system<br>$> ./configure<br><br># Update your repository<br>$> ./update<br><br># Configure again<br>$> ./configure<br><br># Build airOS<br>$> make<br></code><br><h3> Testing in a VM</h3>We're using QEMU for virtualization, so make sure QEMU is installed on your<br>host system.<br>To run airOS in QEMU after a successful build, run<br><code>$> make qemu<br></code><br>to launch airOS in QEMU.<br><h3> Testing on Hardware</h3>Our target hardware is the Raspberry Pi, but airOS might work on other platforms,<br>too. Just install the built image on your testing hardware and start debugging.<br><h2> Credits</h2>Copyright (c) 2017 by ATPC<br>[Open Source Licenses](http://www.atpc.one/airos/components.html)<br>Throughout the hole project, "corresponding README" is defined as the nearest<br>README information file containing a legal notice, relative to the file referencing it, whereas "nearest"<br>means "in the same directory" or "in the nearest directory above".<br><h3> License Files</h3><code>GNU  GPL v3:   gpl-3.0.txt<br>GNU AGPL v3:  agpl-3.0.txt<br>GNU LGPL v3:  lgpl-3.0.txt<br></code><br><p></p><div class="separator"></div><br><p><h2>linux</h2></p>        Linux kernel release 4.x &lt;http://kernel.org/&gt;
 <br>
 <br>These are the release notes for Linux version 4.  Read them carefully,
 <br>as they tell you what this is all about, explain how to install the
@@ -3097,6 +3097,30 @@
 <br>                                that does not result in clipping/distortion!)
 <br>
 <br>
+<br>Name:   allo-boss-dac-pcm512x-audio
+<br>Info:   Configures the Allo Boss DAC audio cards.
+<br>Load:   dtoverlay=allo-boss-dac-pcm512x-audio,&lt;param&gt;
+<br>Params: 24db_digital_gain       Allow gain to be applied via the PCM512x codec
+<br>                                Digital volume control. Enable with
+<br>                                "dtoverlay=allo-boss-dac-pcm512x-audio,
+<br>                                24db_digital_gain"
+<br>                                (The default behaviour is that the Digital
+<br>                                volume control is limited to a maximum of
+<br>                                0dB. ie. it can attenuate but not provide
+<br>                                gain. For most users, this will be desired
+<br>                                as it will prevent clipping. By appending
+<br>                                the 24db_digital_gain parameter, the Digital
+<br>                                volume control will allow up to 24dB of
+<br>                                gain. If this parameter is enabled, it is the
+<br>                                responsibility of the user to ensure that
+<br>                                the Digital volume control is set to a value
+<br>                                that does not result in clipping/distortion!)
+<br>        slave                   Force Boss DAC into slave mode, using Pi a
+<br>                                master for bit clock and frame clock. Enable
+<br>                                with "dtoverlay=allo-boss-dac-pcm512x-audio,
+<br>                                slave"
+<br>
+<br>
 <br>Name:   allo-piano-dac-pcm512x-audio
 <br>Info:   Configures the Allo Piano DAC (2.0/2.1) audio cards.
 <br>        (NB. This initial support is for 2.0 channel audio ONLY! ie. stereo.
@@ -3115,6 +3139,27 @@
 <br>                                responsibility of the user to ensure that
 <br>                                the Digital volume control is set to a value
 <br>                                that does not result in clipping/distortion!)
+<br>
+<br>
+<br>Name:   allo-piano-dac-plus-pcm512x-audio
+<br>Info:   Configures the Allo Piano DAC (2.1) audio cards.
+<br>Load:   dtoverlay=allo-piano-dac-plus-pcm512x-audio,&lt;param&gt;
+<br>Params: 24db_digital_gain       Allow gain to be applied via the PCM512x codec
+<br>                                Digital volume control.
+<br>                                (The default behaviour is that the Digital
+<br>                                volume control is limited to a maximum of
+<br>                                0dB. ie. it can attenuate but not provide
+<br>                                gain. For most users, this will be desired
+<br>                                as it will prevent clipping. By appending
+<br>                                the 24db_digital_gain parameter, the Digital
+<br>                                volume control will allow up to 24dB of
+<br>                                gain. If this parameter is enabled, it is the
+<br>                                responsibility of the user to ensure that
+<br>                                the Digital volume control is set to a value
+<br>                                that does not result in clipping/distortion!)
+<br>        glb_mclk                This option is only with Kali board. If enabled,
+<br>                                MCLK for Kali is used and PLL is disabled for
+<br>                                better voice quality. (default Off)
 <br>
 <br>
 <br>Name:   at86rf233
@@ -3245,6 +3290,12 @@
 <br>Name:   fe-pi-audio
 <br>Info:   Configures the Fe-Pi Audio Sound Card
 <br>Load:   dtoverlay=fe-pi-audio
+<br>Params: &lt;None&gt;
+<br>
+<br>
+<br>Name:   googlevoicehat-soundcard
+<br>Info:   Configures the Google voiceHAT soundcard
+<br>Load:   dtoverlay=googlevoicehat-soundcard
 <br>Params: &lt;None&gt;
 <br>
 <br>
@@ -6770,18 +6821,4 @@
 <br>on line at http://www.chygwyn.com/DECnet/
 <br>
 <br>Steve Whitehouse &lt;SteveW@ACM.org&gt;
-<br><p></p><div class="separator"></div><br><p><h2>Caffeine</h2></p>Copyright (C) 2017 by ATPC
-<br>
-<br>	This program is free software: you can redistribute it and/or modify
-<br>	it under the terms of the GNU Lesser General Public License as
-<br>	published by the Free Software Foundation, either version 3 of the
-<br>	License, or (at your option) any later version.
-<br>
-<br>	This program is distributed in the hope that it will be useful,
-<br>	but WITHOUT ANY WARRANTY; without even the implied warranty of
-<br>	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-<br>	GNU Lesser General Public License for more details.
-<br>
-<br>	You should have received a copy of the GNU Lesser General Public License
-<br>	along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 <br></div></body></html>
