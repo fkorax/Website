@@ -1,0 +1,118 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+	margin-top: 1.125%;
+	margin-bottom: 1.125%;
+}
+
+.login-area {
+	background-color: white;
+	display: inline-block;
+	padding: 5em 5em;
+	border-radius: 5px;
+	color: black;
+	vertical-align: middle;
+	margin: 7.5em;
+	box-shadow: 0px 0px 12px 0px #eeeeee;
+}
+
+.login-title {
+	margin-bottom: 4em;
+	margin-right: 2.25em;
+}
+
+.login-title img {
+	vertical-align: middle;
+}
+
+.login-title .title-separator {
+	padding: 22.5% 0;
+	padding-left: 1px;
+	background-color: black;
+	vertical-align: middle;
+}
+
+.login-title .text-logo {
+	vertical-align: middle;
+	margin-left: 0.75em;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+.login-area .submit-row {
+	text-align: left;
+	padding-left: 0.377em;
+}
+
+.login-area button[type='submit'] {
+	background-color: black;
+	border: none;
+	color: white;
+	font-weight: bold;
+	padding: 12px 18px;
+    text-align: center;
+	text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border: 0;
+	border-radius: 3px;
+	direction: ltr;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	float: left;
+	outline: none;
+}
+
+.login-area button[type='submit']:hover {
+	outline: none;
+	cursor: pointer;
+	background-color: #1e1e1e;
+}
+
+.login-area button[type='submit']:focus {
+	outline: none;
+	background-color: #0b0b0b;
+}
+
+input[type='text'], input[type='password'] {
+	border: 0px solid white;
+	border-bottom: 1px solid lightgray;
+	transition: border 0.5s;
+	padding: 0.4em;
+	font-size: 1em;
+}
+
+input[type='text']:focus, input[type='password']:focus {
+	border-bottom-color: black;
+	outline: none;
+}
+
+
+/*
+<p><input type="url" placeholder="Input search or adress" style="width: 100%;" id="browser_bar" class="title_bar_textfield"></input></p>
+
+input[type=url] {
+  /*border: 1px solid rgba(0,0,0,0.75);*//*
+  border-radius: 2px;
+  padding: 4px;
+  transition: border 0.1s;
+}
+
+input[type=url]:focus {
+  border: 4px solid #f3b4b4;
+  padding: 2px;
+  outline: 0;
+}
+
+.title_bar_textfield {
+  border: 0px solid white;
+  box-shadow: 0px 1px 0.5px lightgrey;
+}
+
+.title_bar_textfield:focus {
+  box-shadow: none;
+}
+*/
