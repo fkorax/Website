@@ -3,6 +3,9 @@ html, body {
 	color: white;
 	background-color: black;
 	font-family: 'ralewaylight', raleway light, raleway, arial, verdana, sans-serif;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	direction: ltr;
 }
 
 .fade_img {
