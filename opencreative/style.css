@@ -21,6 +21,13 @@ html, body {
             animation: land ease-in 3.5s;
 	
 	animation-fill-mode: forwards;
+	
+	background-image: url('icon.svg');
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-size: 256px 256px;
+	width: 256px;
+	height: 256px;
 }
 
 .main-fade {
@@ -135,7 +142,7 @@ h1 {
 
 .subtitle {
 	font-size: 1.2em;
-	text-shadow: 0px 0px 6px #999999;
+	text-shadow: 0px 0px 6px #cdcdcd;
 }
 
 .studio-logo {
