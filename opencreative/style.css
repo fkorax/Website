@@ -142,10 +142,31 @@ and (min-width : 1224px)
 
 @media only screen
 and (max-width : 1224px)
+and (min-width : 700px)
 {
 	.main-section {
 		width: 642px;
 		line-height: 1.45em;
+	}
+}
+
+@media only screen
+and (min-width : 360px)
+and (max-width : 700px) {
+	.main-section {
+		width: 360px;
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 360px) {
+	.main-section {
+		width: 320px;
+		font-size: 1.1em;
+		line-height: 1.4em;
 	}
 }
 
