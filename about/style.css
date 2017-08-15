@@ -1,20 +1,140 @@
-.quote {
-	font-size: 72px;
+html, body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-#credits {
-	margin-top: 5px;
-	font-size: 18px;
+#navbar {
+	margin-top: 1.125%;
+	margin-bottom: 1.125%;
+}
+
+a {
+  color: rgb(0, 132, 180);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.white {
+  background-color: white;
+  color: #101010;
+}
+
+.statement {
+  font-size: 2em;
+  text-align: left;
+}
+
+.statement-link {
+  margin-top: 1em;
+  font-size: .75em;
+}
+
+/* Smaller screens ----------- */
+@media only screen
+and (max-width : 1223px) {
+	/* Styles */
+	.waterfalls {
+		background-image: url('images/waterfalls/small.jpg');
+		/*height: 432px;	/* 480-48 */
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+	/* Styles */
+	.waterfalls {
+		background-image: url('images/waterfalls/normal.jpg');
+		/*height: 864px;	/* 960-96 */
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	/* Styles */
+	.waterfalls {
+		background-image: url('images/waterfalls/large.jpg');
+		/*height: 1296px;	/* 1440-144 */
+	}
+}
+
+/* UHD TVs ----------- */
+@media only screen
+and (min-width: 3000px) {
+	/* Styles */
+	.waterfalls {
+		background-image: url('images/waterfalls/extra-large.jpg');
+		/*height: 2204px;	/* 2448-244,8 */
+	}
+}
+
+.waterfalls {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.waterfalls-overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); /* Standard syntax */
+}
+
+.content .heading {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.contact-infos {
+	margin-top: 2em;
+	font-size: 1.5em;
+}
+
+#workers {
+	text-align: left;
+}
+
+#workers .heading {
+	margin-bottom: 1em;
+}
+
+#workers .worker {
+	display: inline-block;
+}
+
+#workers .name {
+	text-align: left;
+	font-size: 1.5em;
 }
 
 #workers .photo {
-	transition: transform .5s ease, box-shadow .5s ease;
+	transition: box-shadow .5s ease;
 	vertical-align: middle;
 	margin-right: 1em;
 }
 
 #workers .photo:hover {
-	transform: rotate(5deg);
 	box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
 }
 
@@ -24,19 +144,12 @@
 	vertical-align: middle;
 }
 
-
-#disclaimer {
-	font-size: .55em;
+#credits {
+	text-align: left;
 }
 
-
-.login-field {
-	margin-top: 4em;
-	font-size: .75em;
-	margin-bottom: 2em;
-}
-
-.login-field a {
-	color: black;
-	background-color: white;
+.paper-bag {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #b29772;
+  font-size: 6em;
 }

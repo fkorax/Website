@@ -2,7 +2,7 @@ html, body {
 	text-align: center;
 	color: white;
 	background-color: black;
-	font-family: 'ralewaylight', raleway light, raleway, arial, verdana, sans-serif;
+	font-family: 'ralewaylight', Raleway Light, Raleway, Arial, Verdana, sans-serif;
 	text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 	direction: ltr;
@@ -30,11 +30,48 @@ a:hover {
 	text-decoration: underline;
 }
 
+figure {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
 
 .small_menu_link {
 	font-size: 22px;
 }
 
-#twitter {
+.github {
+	background-image: url('github.svg');
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.twitter {
+	background-image: url('twitter.svg');
+	background-size: 36px 36px;
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	
 	margin-left: 2.5px;
+}
+
+.instagram {
+	background-image: url('instagram.svg');
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+}
+
+.email {
+	background-image: url('email.svg');
+	background-size: 34px 34px;
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 34px;
+	margin-left: 5px;
 }

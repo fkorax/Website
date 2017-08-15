@@ -20,16 +20,34 @@
 		font-family: 'ralewaylight', 'Raleway Light', Raleway, Arial, Verdana, sans-serif;
    }
    
-   img {
+   figure {
 		vertical-align: middle;
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+		
+		margin: 0;
+   }
+   
+   .logo {
+		background-image: url('../logo_white.svg');
+		background-repeat: no-repeat;
+		display: inline-block;
+		background-size: 48px 48px;
+		width: 48px;
+		height: 48px;
    }
    
    .font_logo {
 		margin-top: 6px;
+		
+		background-image: url('../font_logo.svg');
+		background-repeat: no-repeat;
+		display: inline-block;
+		background-size: auto 32px;
+		width: 83px;
+		height: 32px;
    }
    
    a {
@@ -45,6 +63,6 @@
  </head>
  
  <body>
-  <a href="http://atpc.one"><img src="../logo_white.svg" height="48" title="Logo by Paul Krizsan" alt="Logo"><img class="font_logo" src="../font_logo.svg" alt="ATPC" height="32"></a>
+  <a href="http://atpc.one"><figure class="logo" title="Logo by Paul Krizsan" alt="Logo"></figure><figure class="font_logo" alt="ATPC"></figure></a>
  </body>
 </html>
