@@ -1,0 +1,65 @@
+html, body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#navbar {
+	margin-top: 1.125%;
+	margin-bottom: 1.125%;
+}
+
+a {
+	color: #08aa00;
+}
+
+header {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+	background-image: url('untitled.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+}
+
+.content {
+	font-size: 2em;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 1.75em;
+	text-shadow: 0px 0px 6px #cdcdcd;
+}
+
+#licenses {
+	margin-top: 2.5em;
+}
+
+/* Other (smaller) screens ----------- */
+@media only screen
+and (max-width : 1223px) {
+	/* Styles */
+	.list {
+		margin: 0 1em;
+	}
+}
+
+/* Big screens ----------- */
+@media only screen
+and (min-width : 1224px) {
+	/* Styles */
+	.list {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+.list {
+	text-align: left;
+}
