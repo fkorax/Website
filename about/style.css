@@ -12,22 +12,36 @@ html, body {
 	margin-bottom: 1.125%;
 }
 
-a {
-  color: rgb(0, 132, 180);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 section {
   padding: 100px 0;
 }
 
+section.sized {
+	box-sizing: border-box;
+	position: relative;
+	text-align: center;
+	min-height: 790px;
+	max-height: 840px;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	z-index: 2;
+}
+
 .content {
-  width: 50%;
-  margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
+	line-height: 1.5em;
+}
+
+.sized .sized-content {
+	-webkit-transform: translateY(-60%);
+	-ms-transform: translateY(-60%);
+	transform: translateY(-60%);
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	width: 100%;
 }
 
 .white {
@@ -68,8 +82,32 @@ section {
   font-size: .75em;
 }
 
-.parenth {
-	font-size: 1.15em;
+@media only screen
+and (max-width : 530px) {
+	/* Styles */
+	.contact-infos {
+		-webkit-transform: translateX(-20%);
+		-ms-transform: translateX(-20%);
+		transform: translateX(-20%);
+	}
+	
+	.statement.founding {
+		font-size: 5vw;
+	}
+}
+
+@media only screen
+and (min-width : 530px) {
+	/* Styles */
+	.contact-infos {
+		-webkit-transform: translateX(-20%);
+		-ms-transform: translateX(-20%);
+		transform: translateX(-20%);
+	}
+	
+	.statement.founding {
+		font-size: 4vw;
+	}
 }
 
 /* Smaller screens ----------- */
@@ -78,15 +116,6 @@ and (max-width : 1223px) {
 	/* Styles */
 	.workers-section {
 		background-image: url('images/workers-bg/normal.jpg');
-	}
-	
-	.thomorl .background-overlay {
-		background-color: rgba(0, 0, 0, 0.5);
-		color: white;
-	}
-	
-	.statement.founding {
-		font-size: 5vw;
 	}
 }
 
@@ -118,6 +147,22 @@ and (min-width : 1475px) {
 	}
 }
 
+/* **** Speciality for the .thomrol background-overlay **** */
+@media only screen
+and (max-width : 1320px) {
+	.thomorl .background-overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+	}
+}
+
+@media only screen
+and (min-width : 1320px) {
+	.thomorl .background-overlay {
+		background-color: rgba(0, 0, 0, 0);
+		color: black;
+	}
+}
 
 /* Desktops and laptops ----------- */
 @media only screen
@@ -125,11 +170,6 @@ and (min-width : 1224px) {
 	/* Styles */
 	.workers-section {
 		background-image: url('images/workers-bg/large.jpg');
-	}
-	
-	.thomorl .background-overlay {
-		background-color: rgba(0, 0, 0, 0);
-		color: black;
 	}
 	
 	.statement.founding {
@@ -170,15 +210,25 @@ and (min-width: 3000px) {
 	padding: 100px 0;
 }
 
-.content .heading {
-	text-align: center;
-	font-weight: bold;
+#contact {
 	font-size: 1.5em;
 }
 
 .contact-infos {
 	margin-top: 2em;
-	font-size: 1.5em;
+	display: inline-block;
+}
+
+.contact-infos td {
+	padding: 10px;
+}
+
+.contact-infos td.label {
+	text-align: right;
+}
+
+.contact-infos td.value {
+	text-align: left;
 }
 
 #workers {
@@ -241,16 +291,13 @@ and (min-width: 3000px) {
 	transition: background-color 1s, color .75s;
 }
 
-.statement.founding p {
-	margin: 2vw 0;
-}
-
 .copyright-notice {
 	padding: 75px 0;
 }
 
 .copyright-notice .main-notice {
 	font-size: 1.325em;
+	line-height: initial;
 }
 
 #credits {
