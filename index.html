@@ -17,8 +17,8 @@
  </head>
  
  <body>
-  <img src="logo_white.svg" width="250" height="250" title="Logo by Paul Krizsan" alt="Logo" class="fade_img"><br>
-  <img src="font_logo.svg" alt="ATPC" width="330" height="128" class="fade_img">
+  <figure class="fade_img logo" title="Logo by Paul Krizsan" alt="Logo"></figure>
+  <figure class="fade_img font-logo" alt="ATPC"></figure>
   <p id="slogan"><span class="fade one">Develop.</span> <span class="fade two">Forward.</span></p>
   <br>
   <br>
@@ -26,16 +26,39 @@
   <!--<br>-->
   <div id="text" class="fade three">
   <!--Film einbinden-->
-  <span id="main-links">
-  <p><a href="">Open Creative &nbsp;></a></p>
-  </span>
+  <nav id="products" class="productnav">
+   <div class="productnav-wrapper">
+    <ul class="productnav-items">
+	 <li class="productnav-item deer">
+	  <a class="productnav-link" href="/deer/">
+	   <figure class="productnav-icon"></figure>
+	   <span class="productnav-label">Deer</span>
+	  </a>
+	 </li>
+	 <li class="productnav-item deeros">
+	  <a class="productnav-link" href="/deeros/">
+	   <figure class="productnav-icon"></figure>
+	   <span class="productnav-label">deerOS</span>
+	  </a>
+	  </li>
+	</ul>
+   </div>
+  </nav>
+  <!--span id="main-links">
+  <p>
+   <a class="productnav-link" href="/deeros/">
+    <figure class="deeros-icon"></figure>
+	<span class="chapternav-label">OS 1.0</span>
+   </a>
+  </p>
+  </span-->
   <br>
   <a href="https://github.com/atpc" style="color: white;"><img id="octocat" src="github.svg" width="32" height="32"></a>
   <a href="https://twitter.com/official_atpc" style="color: white;"><img id="twitter" src="twitter.svg" width="36" height="36"></a>
   <br>
   <br>
   <br>
-  <a href="" class="small_menu_link">Other Products &nbsp;></a>&nbsp;&nbsp;<a href="about/index.html" class="small_menu_link">About &nbsp;></a>
+  <a href="" class="small-menu-link">Other Products</a><span class="small-menu-link link-gt"> &nbsp;&rsaquo;</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="about/index.html" class="small-menu-link">About</a><span class="small-menu-link link-gt"> &nbsp;&rsaquo;</span>
   </div>
   <footer class="fade three copyright-notice">
   Website &#169; 2016-2017 by ATPC.

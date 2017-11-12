@@ -1,3 +1,21 @@
+.logo {
+	display: inline-block;
+	width: 100%;
+	height: 250px;
+	background: center no-repeat;
+	background-image: url('logo_white.svg');
+	margin-bottom: 1em; /*br*/
+}
+
+.font-logo {
+	display: inline-block;
+	width: 330px;
+	height: 128px;
+	background: center no-repeat;
+	background-size: cover;
+	background-image: url('font_logo.svg');
+}
+
 .copyright-notice {
 	color: rgba(255, 255, 255, .85);
 	font-size: .975em;
@@ -5,4 +23,81 @@
 	padding-top: 5em;
 	padding-bottom: 1.5em;
 	text-align: center;
+}
+
+.productnav {
+	width: 100%;
+	/*height: 86px*/
+	padding: 12px 0;
+}
+
+.productnav-wrapper {
+	position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+.productnav-items {
+	list-style: none;
+    margin: 0 34px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 50px;
+    white-space: nowrap;
+}
+
+@media only screen and (orientation: landscape) {
+	.productnav-items {
+		padding-bottom: 49px;
+	}
+}
+
+.productnav-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -.11765em;
+    padding: 0 .9em;
+}
+
+.productnav-item:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.productnav-link {
+	color: white;
+	transition: color, .2s;
+	font-size: 1.5em;
+}
+
+.productnav-link:hover {
+	text-decoration: none;
+	color: hsla(199, 80%, 48%, 1);
+}
+
+.productnav-icon {
+    background: center bottom no-repeat;
+    width: 1.2em;
+	margin: 0 auto 0.5em auto;
+	display: block;
+	height: 1.2em; /* Controls the size*/
+}
+
+.productnav-label {
+    font-size: .6em; /*11px*/
+    line-height: 1.09091;
+    font-weight: 400;
+    letter-spacing: .005em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: block;
+    margin: 0;
+}
+
+.productnav-item.deer .productnav-icon {
+	background-image: url('images/deer.svg');
+}
+
+.productnav-item.deeros .productnav-icon {
+	background-image: url('images/deeros.svg');
 }
